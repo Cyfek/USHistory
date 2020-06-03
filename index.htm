@@ -14,6 +14,16 @@
 	<img src="https://cdn.eso.org/images/thumb300y/eso1907a.jpg">
 	<p><a href="page2.htm"> page two </a><p>
 	<p><a href="manhatten.htm"> manhatten </a><p>
+	
+	<script type="text/javascript'>
+	function random_3(){
+    		var myrandom=Math.round(Math.random()*3)
+   		var link_list=new Array("comics.htm", "manhatten.htm", "page2.htm")
+    		window.location=links[myrandom]
+	}</script>
+	 
+	<form><input type="button" value="Random Page" onClick="random_3()">
+</form>
 
 </body>
 
