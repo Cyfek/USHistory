@@ -12,20 +12,19 @@
 	
 	<!-- <script src="script.js"></script> -->
 	<!-- <img src="https://cdn.eso.org/images/thumb300y/eso1907a.jpg"> -->
-	<H6><a href="timeline.htm"> Timeline </a><H6>
-	<H6><a href="physics.htm"> Physics </a><H6>
-	<H6><a href="comics.htm"> Comics </a><H6>
+	<H2><a href="timeline.htm"> Timeline </a></H2>
+	<H3><a href="physics.htm"> Physics </a></H3>
+	<H4><a href="comics.htm"> Comics </a></H4>
 
 	<script>
 	function random_3(){
     		var myrandom=Math.round(Math.random()*3);
    		var link_list=new Array("comics.htm", "manhatten.htm", "page2.htm");
-    		window.location=link_list[myrandom];
+    		link_output=link_list[myrandom];
 	}</script>
 	 
-	<form>
-		<INPUT TYPE=”button” VALUE=”Random Page” onClick=”random_3();”>
-	</form>
+	<input type="button" value="Random Page" onClick=”random_3();”>
+	<p id="link_output"></p>
 
 </body>
 
