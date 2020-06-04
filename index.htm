@@ -18,12 +18,12 @@
 
 	<script>
 	function random_3(){
-    		var myrandom=Math.round(Math.random()*3);
-   		var link_list=new Array("comics.htm", "manhatten.htm", "page2.htm");
-    		link_output=link_list[myrandom];
+    	var myrandom=Math.round(Math.random()*3);
+		var link_list=new Array("comics.htm", "manhatten.htm", "page2.htm");
+		document.getElementById("link_output").innerHTML = link_list[myrandom];
 	}</script>
 	 
-	<input type="button" value="Random Page" onClick=”random_3();”>
+	<input type="button" value="Random Page" onClick="random_3();">
 	<p id="link_output"></p>
 
 </body>
