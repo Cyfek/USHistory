@@ -20,11 +20,10 @@
 	function random_3(){
     	var myrandom=Math.round(Math.random()*3);
 		var link_list=new Array("comics.htm", "manhatten.htm", "page2.htm");
-		location.replace = link_list[myrandom];
+		location.replace(link_list[myrandom]);
 	}</script>
 	 
 	<input type="button" value="Random Page" onClick="random_3();">
-	<p><a href="comics.htm"> Comics </a></p>
 
 </body>
 
