@@ -24,8 +24,11 @@
 	</form>
 	
 	<script>
-		var bomb1 = bombs.elements["cars"].value;
-		console.log(bomb1);
+		var form = document.querySelector("form");
+  		form.addEventListener("submit", function(event) {
+    		console.log("Saving value", form.elements.value.value);
+    		event.preventDefault();
+  		});
 	</script>
 
 	<table style="width:100%">
@@ -44,7 +47,7 @@
     		<td>Jackson</td>
     		<td>94</td>
   		</tr>
-</table>	
+	</table>	
 </body>
 
 	
